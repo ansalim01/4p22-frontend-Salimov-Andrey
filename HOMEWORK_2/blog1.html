@@ -12,8 +12,46 @@
 <body>
     <div class="wrapper">
         <div class="content">
-            <include src="./menu.html"></include>
-            <main></main>
+            <?php include "./header.html" ?>
+
+            Content
+
+            <?php include "./footer.html" ?>
+            <main class="main">
+                <h1 class="main__title title">(text)Title h1</h1>
+                <article class="main__article article">
+                    <h2 class="article__title">(text)Title h2</h2>
+                    <section class="article__section section">
+                        <h3 class="section__title">(text)Title h3></h3>
+                        <div class="section__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum recusandae error saepe
+                            porro blanditiis animi dolorem quia quidem eveniet a mollitia voluptatem neque facilis, nemo
+                            odit? Esse in ipsa repellat.<br>
+                            <a href="./blog1.html" class="section__text_linc">продолжение</a>
+                        </div>
+                    </section>
+                    <section class="article__section section">
+                        <h3 class="section__title">(text)Title h3></h3>
+                        <div class="section__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum recusandae error saepe
+                            porro blanditiis animi dolorem quia quidem eveniet a mollitia voluptatem neque facilis, nemo
+                            odit? Esse in ipsa repellat.<br>
+                            <a href="./blog2.html" class="section__text_linc">продолжение</a>
+                        </div>
+                    </section>
+
+
+                </article>
+                <aside class="main__aside aside">
+                    <h2 class="aside__title">(text)Title h2</h2>
+                    <div class="aside__contacts">
+                        <a href="mailto:ansalim14@gmail.com?subject=Вопрос по HTML">Задавайте
+                            вопросы по электронной почте ansalim14@gmail.com</a><br>
+                        <a href="tel:+ 79625573241">Телефон +7(962)557-32-41</a><br>
+                    </div>
+
+                </aside>
+            </main>
 
         </div>
     </div>
