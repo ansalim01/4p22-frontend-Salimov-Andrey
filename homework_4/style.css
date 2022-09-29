@@ -1,81 +1,81 @@
 /*Обнуление*/
 * {
-	padding: 0;
-	margin: 0;
-	border: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 *,
 *:before,
 *:after {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :focus,
 :active {
-	outline: none;
+    outline: none;
 }
 
 a:focus,
 a:active {
-	outline: none;
+    outline: none;
 }
 
 nav,
 footer,
 header,
 aside {
-	display: block;
+    display: block;
 }
 
 html,
 body {
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 input,
 button,
 textarea {
-	font-family: inherit;
+    font-family: inherit;
 }
 
 input::-ms-clear {
-	display: none;
+    display: none;
 }
 
 button {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+    padding: 0;
+    border: 0;
 }
 
 a,
 a:visited {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 ul li {
-	list-style: none;
+    list-style: none;
 }
 
 img {
-	vertical-align: top;
+    vertical-align: top;
 }
 
 h1,
@@ -84,23 +84,25 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: inherit;
-	font-weight: 400;
+    font-size: inherit;
+    font-weight: 400;
 }
 
 
 /*--------------------*/
-body{
+body {
     font-family: 'Muller';
-    
+
+
 }
+
 /*------main---------------------------*/
 .main {}
 
 .main__content {
     max-width: 100%;
     margin: 0 auto;
-    padding:15px;
+    padding: 15px;
 }
 
 .main__placement {}
@@ -109,26 +111,26 @@ body{
 
 .placement__title {
     font-style: normal;
-font-weight: 400;
-font-size: 2.857rem;
-line-height: 285.7%;
-/* identical to box height */
+    font-weight: 400;
+    font-size: 2.857rem;
+    line-height: 285.7%;
+    /* identical to box height */
 
 
-color: #333333;
+    color: #333333;
 }
 
 .placement__product-card {
-    
+
     display: grid;
 
-grid-template: auto / repeat(auto-fit,minmax(374px, 1fr));
-grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 25px;
 }
 
 .product-card {}
 
-.product-card__item{
+.product-card__item {
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -136,21 +138,35 @@ grid-gap: 25px;
     margin: 0 0 26px 0;
 }
 
-.product-card__img{
-width: 100%;
+@media(max-width:479px) {
+    .product-card__imgs {
+        margin: 0 0 15px 0;
+    }
 }
+
+.product-card__img {
+    width: 100%;
+}
+
 .product-card__body {
     margin: 0 0 41px 45px;
 }
 
-.product-card__body>*:not(:last-child,.product-card__country) {
+@media(max-width:660px) {
+    .product-card__body {
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+}
+
+
+
+.product-card__body>*:not(:last-child, .product-card__country) {
     margin: 0 0 16px 0;
 }
 
 
-.product-card__price-rating {
-    
-}
+.product-card__price-rating {}
 
 .price-rating {}
 
@@ -160,22 +176,28 @@ width: 100%;
     font-style: normal;
     font-weight: 400;
     font-size: 1.142rem;
-    line-height: 114%;}
-    
-    
-    
+    line-height: 114%;
+}
 
-.samp__discolored{
-    
-font-style: normal;
-font-weight: 400;
-font-size: 1.142rem;
-line-height: 114%;
-/* identical to box height */
+@media(max-width:660px) {
+    .price-rating__praice {
+        display: block;
+        margin: 0 0 0 0;
+    }
+}
 
 
-color: #999999;
-} 
+.samp__discolored {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.142rem;
+    line-height: 114%;
+    /* identical to box height */
+
+
+    color: #999999;
+}
 
 .samp__big-blac {
 
@@ -186,11 +208,13 @@ color: #999999;
 }
 
 
-.product-card__hotel {font-family: 'Muller';
+.product-card__hotel {
+    font-family: 'Muller';
     font-style: normal;
     font-weight: 400;
     font-size: 1.142rem;
-    line-height: 114%;}
+    line-height: 114%;
+}
 
 .product-card__country {
     margin: 0 0 20px 0;
@@ -199,15 +223,15 @@ color: #999999;
     font-size: 1.142rem;
     line-height: 114%;
     /* identical to box height */
-    
-    
-    color: #999999;}
 
-.product-card__button {
-    
+
+    color: #999999;
 }
-.product-card__button-link{
-    
+
+.product-card__button {}
+
+.product-card__button-link {
+
     display: inline-block;
     border: 1px solid #CC9933;
     border-radius: 10px;
@@ -218,9 +242,17 @@ color: #999999;
     font-size: 1.142rem;
     line-height: 114%;
     /* identical to box height */
-    
-    
-    color: #CC9933;}
+
+
+    color: #CC9933;
+}
+
+@media(max-width:660px) {
+    .product-card__button-link {
+        width: 100%;
+
+    }
+}
 
 /*---------------------------------*/
 
@@ -234,9 +266,7 @@ color: #999999;
 /*--рейтинг---------------------------------*/
 
 
-.price-rating__rating {
-
-}
+.price-rating__rating {}
 
 .simple-rating {
     position: relative;
@@ -244,11 +274,31 @@ color: #999999;
     display: inline-block;
 
 }
-.simple-rating::before{
+
+@media(max-width:479px) {
+    .simple-rating {
+
+        font-size: 1.928rem;
+
+
+    }
+}
+
+@media(max-width:710px) {
+    .simple-rating {
+        margin: 10px 0;
+        font-size: 1.928rem;
+
+
+    }
+}
+
+.simple-rating::before {
     content: "★★★★★";
     display: block;
 }
-.simple-rating__items{ 
+
+.simple-rating__items {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -257,10 +307,11 @@ color: #999999;
     display: flex;
     flex-direction: row-reverse;
     overflow: hidden;
-} 
+}
 
 
-.simple-rating__item { position: absolute;
+.simple-rating__item {
+    position: absolute;
     width: 0%;
     height: 0%;
     opacity: 0;
@@ -274,24 +325,25 @@ color: #999999;
     flex: 0 0 20%;
     height: 100%;
     cursor: pointer;
-    color:rgb(199, 197, 197)
+    color: rgb(199, 197, 197)
 }
 
-.simple-rating__label::before{
+.simple-rating__label::before {
     content: "★";
     display: block;
-    transition: color 0.3s ease 0s ;
+    transition: color 0.3s ease 0s;
 }
+
 .simple-rating__item:checked,
-.simple-rating__item:checked ~ .simple-rating__label{
+.simple-rating__item:checked~.simple-rating__label {
     color: gold;
 }
 
 
 .simple-rating__label:hover,
-.simple-rating__label:hover ~ .simple-rating__label,
-.simple-rating__label:checked ~ .simple-rating__label:hover{
-color: rgb(241, 227, 145);
+.simple-rating__label:hover~.simple-rating__label,
+.simple-rating__label:checked~.simple-rating__label:hover {
+    color: rgb(241, 227, 145);
 }
 
 
