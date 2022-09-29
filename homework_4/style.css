@@ -90,19 +90,100 @@ h6 {
 
 
 /*--------------------*/
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Muller';
 
 
+
+
 }
 
+.wrapper {
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*---------------------------------*/
+
+
+
+.header {
+    flex: 0 0 auto;
+    padding: 10px;
+}
+
+.header__menu {
+    margin: 15px 0;
+    min-height: 110px;
+}
+
+/*----*/
+
+.menu {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.menu__logo {
+    display: block;
+    max-width: 100px;
+    margin: 0 150px 0 0;
+}
+
+.menu__logo-img {
+    width: 100%;
+}
+
+.menu__nav {}
+
+.menu__ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__ul>*:not(:last-child) {
+    margin: 0 25px 0 0;
+}
+
+.menu__li {}
+
+.menu__li-a {
+    font-weight: 600;
+    line-height: 200%;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.2px;
+    /* second-text-color */
+    color: #000;
+    transition-duration: 0.5s;
+}
+
+.menu__li-a:hover {
+    border-bottom: 1px solid #4B2525;
+    color: #4B2525;
+    position: relative;
+    bottom: 2px;
+
+}
+
+
+/*-----------------------------*/
+
 /*------main---------------------------*/
-.main {}
+main {}
 
 .main__content {
     max-width: 100%;
     margin: 0 auto;
-    padding: 15px;
+
+
 }
 
 .main__placement {}
@@ -254,8 +335,6 @@ body {
     }
 }
 
-/*---------------------------------*/
-
 
 
 
@@ -349,3 +428,29 @@ body {
 
 
 /*---------------------------------------*/
+
+
+.footer {
+    flex: 0 0 auto;
+    display: block;
+}
+
+.footer__content {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.142rem;
+    line-height: 190%;
+    /* or 30px */
+
+
+    color: #FFFFFF;
+
+    min-height: 50px;
+    background: #333333;
+
+
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
