@@ -1,4 +1,5 @@
-'use strict'
+"use strict"
+
 let b= 1.005+Number.EPSILON
 let a = Math.round(b*100)/100
 console.log(a);
