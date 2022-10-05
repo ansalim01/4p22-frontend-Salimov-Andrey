@@ -273,13 +273,14 @@ position: relative;}
 }
 
 .navigation__item {
-   margin: 0 0 0 15px;
+    display: inline-block;
+   margin: 0 15PX 0 15px;
 
 }
 .navigation__linc{
     font-size: 1.85rem;
     /* 54px */
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     /* 63px */
     color: rgb(0, 0, 0);
 }
