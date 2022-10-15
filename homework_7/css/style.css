@@ -140,7 +140,7 @@ font-weight: 700;
     background:#fff;
     margin: calc(82/1440*100vw) auto;
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-radius: calc(20/768*100vw);
     
 }
 
@@ -157,7 +157,7 @@ font-weight: 700;
         background:#fff;
         margin: calc(20/768*100vw);
         box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 20px;
+        
         
     }
 }
@@ -230,7 +230,7 @@ font-weight: 700;
 .section-input-field__mail-input {
     width: calc(509/1440*100vw);
     border: calc(2/1440*100vw) solid #787878;
-border-radius: 10px;
+    border-radius: calc(10/768*100vw);
 
 
 font-weight: 700;
@@ -246,7 +246,7 @@ padding-left: calc(15/1440*100vw);
     .section-input-field__mail-input {
         width: calc(638/768*100vw);
         border: calc(2/768*100vw) solid #787878;
-        border-radius: 10px;
+        
     
     
         font-weight: 700;
@@ -271,7 +271,7 @@ padding-left: calc(15/1440*100vw);
     
     width: calc(509/1440*100vw);
     border:calc(2/1440*100vw) solid #787878;
-    border-radius: 10px;
+    border-radius: calc(10/768*100vw);
     font-weight: 700;
     font-size: calc(28/1440*100vw);
     line-height: calc(36/1440*100vw);
@@ -285,7 +285,7 @@ padding-left: calc(15/1440*100vw);
         
         width: calc(638/768*100vw);
         border:calc(2/768*100vw) solid #787878;
-        border-radius: 10px;
+        border-radius: calc(10/768*100vw);
         font-size: calc(28/768*100vw);
         line-height: calc(36/768*100vw);
         padding-left: calc(15/768*100vw) ;
@@ -405,7 +405,7 @@ font-size: calc(24/1440*100vw);
 line-height: calc(16/1440*100vw);
 color: #FFFFFF;
 background: #1A226B;
-border-radius: 10px;
+border-radius: calc(10/768*100vw);
 width: calc(180/1440*100vw);
 padding: calc(18/1440*100vw) 0;
 }
