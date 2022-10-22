@@ -2,7 +2,10 @@
 @import "/homework_7/fonts/Roboto/stylesheet.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@400;700&display=swap');
 
+
+
 /*Обнуление*/
+
 * {
     padding: 0;
     margin: 0;
@@ -510,6 +513,9 @@ body {
     flex-shrink: 0;
     flex-grow: 0;
     margin-right: calc(9/1440*100vw);
+    background-clip: content-box;
+    /* background-position: 50% 50%; */
+    padding: calc(2/1440*100vw);
 }
 
 @media (max-width:768px) {
@@ -518,15 +524,17 @@ body {
         width: calc(20/768*100vw);
         height: calc(20/768*100vw);
         margin-right: calc(9/768*100vw);
+        padding: calc(2/768*100vw);
     }
 
 }
 
 .section-input-field-gender__input:checked+label:before {
-    background-position: 50% 50%;
-    background-image: url(../img/main/Ellipse3.svg);
-    background-repeat: no-repeat;
-    background-size: calc(12/1440*100vw) calc(12/1440*100vw);
+    /* background-position: 50% 50%; */
+    /* background-image: url(../img/main/Ellipse3.svg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: calc(12/1440*100vw) calc(12/1440*100vw); */
+    background-color: #787878;
 }
 
 @media (max-width:768px) {
@@ -534,7 +542,6 @@ body {
         background-size: calc(12/768*100vw) calc(12/768*100vw);
     }
 }
-
 
 .about-me {}
 
@@ -559,7 +566,7 @@ body {
     font-weight: 700;
     font-size: calc(28/1440*100vw);
     line-height: calc(36/1440*100vw);
-    /* identical to box height, or 129% */
+
     color: #787878;
     border: 2px solid #787878;
 }
@@ -568,7 +575,6 @@ body {
     .section-input-field__about-me-input {
         width: calc(510/768*100vw);
         height: calc(246/768*100vw);
-
         font-size: calc(28/768*100vw);
         line-height: calc(36/768*100vw);
 
@@ -579,25 +585,16 @@ body {
     font-weight: 700;
     font-size: calc(28/1440*100vw);
     line-height: calc(36/1440*100vw);
-    /* identical to box height, or 129% */
-
-
     color: #CCCCCC;
-
 }
 
 @media (max-width:768px) {
     .section-input-field__about-me-input::placeholder {
         font-size: calc(28/768*100vw);
         line-height: calc(36/768*100vw);
-
-
     }
 
 }
-
-
-
 
 
 .item-checkbox {
@@ -635,6 +632,8 @@ body {
     width: calc(24/1440*100vw);
     height: calc(24/1440*100vw);
     border: 2px solid #787878;
+    background-clip: content-box;
+    padding: calc(4/1440*100vw);
 }
 
 @media (max-width:768px) {
@@ -643,23 +642,22 @@ body {
         margin-right: calc(10/768*100vw);
         width: calc(24/768*100vw);
         height: calc(24/768*100vw);
+        padding: calc(4/768*100vw);
 
     }
 }
 
 .section-input-field__checkbox-input:checked+label:before {
-    background-image: url(../img/main/Rectangle4.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: calc(12/1440*100vw) calc(12/1440*100vw);
+
+    background-color: #787878;
 }
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
     .section-input-field__checkbox-input:checked+label:before {
 
         background-size: calc(12/768*100vw) calc(12/768*100vw);
     }
-}
+} */
 
 .section-input-field__button {
     display: block;
