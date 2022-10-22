@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato:wght@300;400;700&display=swap');
 @import "/homework_7/fonts/Roboto/stylesheet.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@400;700&display=swap');
 
 /*Обнуление*/
 * {
@@ -616,14 +617,14 @@ body {
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-size: calc(14/1440/100vw);
-    line-height: calc(16/1440/100vw);
+    font-size: calc(14/1440*100vw);
+    line-height: calc(16/1440*100vw);
 }
 
 @media (max-width:768px) {
     .section-input-field__approval-label {
-        font-size: calc(14/768/100vw);
-        line-height: calc(16/768/100vw);
+        font-size: calc(14/768*100vw);
+        line-height: calc(16/768*100vw);
     }
 
 }
