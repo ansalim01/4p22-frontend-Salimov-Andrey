@@ -508,7 +508,7 @@ body {
 
     width: calc(20/1440*100vw);
     height: calc(20/1440*100vw);
-    border: 2px solid #787878;
+    border: calc(2/1440*100vw) solid #787878;
     border-radius: 50%;
     flex-shrink: 0;
     flex-grow: 0;
@@ -525,6 +525,7 @@ body {
         height: calc(20/768*100vw);
         margin-right: calc(9/768*100vw);
         padding: calc(2/768*100vw);
+        border: calc(2/768*100vw) solid #787878;
     }
 
 }
@@ -568,7 +569,7 @@ body {
     line-height: calc(36/1440*100vw);
 
     color: #787878;
-    border: 2px solid #787878;
+    border: calc(2/1440*100vw) solid #787878;
 }
 
 @media (max-width:768px) {
@@ -577,6 +578,7 @@ body {
         height: calc(246/768*100vw);
         font-size: calc(28/768*100vw);
         line-height: calc(36/768*100vw);
+        border: calc(2/768*100vw) solid #787878;
 
     }
 }
@@ -631,7 +633,7 @@ body {
     margin-right: calc(10/1440*100vw);
     width: calc(24/1440*100vw);
     height: calc(24/1440*100vw);
-    border: 2px solid #787878;
+    border: calc(2/1440*100vw) solid #787878;
     background-clip: content-box;
     padding: calc(4/1440*100vw);
 }
@@ -643,6 +645,7 @@ body {
         width: calc(24/768*100vw);
         height: calc(24/768*100vw);
         padding: calc(4/768*100vw);
+        border: calc(2/768*100vw) solid #787878;
 
     }
 }
