@@ -63,8 +63,7 @@ buttonId.addEventListener('click', (event) => {
 
     if (isNaN(rezilt)) {
         console.log('Операция некорректна');
-    };
-    if (rezilt === Infinity) {
+    }else if (rezilt === Infinity) {
 
         console.log('Операция некорректна');
     }else{
