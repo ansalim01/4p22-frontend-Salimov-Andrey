@@ -175,6 +175,9 @@ console.log(counter());
 //          num++;
 //     })();
 // }
+
+
+
 const fibonacci =(function () {
     var num=0;
     var fn1=1;
