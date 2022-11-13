@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded',function () {
     const errorEmail = document.getElementById('__error-email')
     const errorPassword = document.getElementById('__error-password')
     const errorPasswordCon = document.getElementById('__error-passwordCon')
-    console.log(errorEmail);
-    console.log(errorPassword);
-    console.log(errorPasswordCon);
+   
 
     let resultEmail='';
     let resultPass='';
@@ -109,7 +107,7 @@ document.addEventListener('DOMContentLoaded',function () {
         for(var i = 0; i < rates.length; i++){
             if(rates[i].checked){
                 resultGender = rates[i].value;
-                console.log(resultGender);
+                
             }
         }
 
