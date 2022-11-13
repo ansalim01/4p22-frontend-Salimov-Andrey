@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration page</title>
+    <link rel="stylesheet" href="./css/style_page_registration.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="header__conteiner _conteiner">
+                    <div class="header__logo">
+                        <div class="header__imgs">
+                            <img src="./img/header/1280px-IU_logo 1.png" alt="logo">
+                        </div>
+                        <div class="header__wordmark">PCS Frontend</div>
+                    </div>
+                    <div class="header__navigation">
+                        <nav class="header__navigation-nav">
+                            <ul class="header__navigation-item">
+                                <li class="header__navigation-li"><a class="header__navigation-link _pressed"
+                                        href="./page_registration.html">Регистрация</a>
+                                </li>
+                                <li class="header__navigation-li"><a class="header__navigation-link"
+                                        href="./page_login.html">Вход</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="main__conteiner _conteiner">
+                    <section class="section-input-field">
+                        <div class="section-input-field__title">
+                            Регистрация
+                        </div>
+                        <form action="" class="section-input-field__body" id="form">
+                            <div class="section-input-field__item item-mail form-item">
+                                <label class="section-input-field__mail-label" for="mail-input">Email <span
+                                        class="form-error" id="__error-email"></span></label>
+                                <!-- <div class="alerts-error__mail">Email введён некорректно </div> -->
+                                <input class="section-input-field__mail-input _red _email" type="text"
+                                    placeholder="Введите email" id="mail-input">
+                            </div>
+                            <div class="section-input-field__item item-password form-item">
+                                <label class="section-input-field__password-label" for="password-input">Пароль <span
+                                        class="form-error" id="__error-password"></span></label>
+                                <!-- <div class="alerts-error__pass">Поле обязательно для заполнения</div> -->
+                                <input class="section-input-field__password-input _red _password" type="text"
+                                    placeholder="Введите пароль" id="password-input">
+                            </div>
+                            <div class="section-input-field__item item-password-confirmation form-item">
+                                <label class="section-input-field__password-label"
+                                    for="password-confirmation-input">Подтверждение
+                                    пароля<span class="form-error" id="__error-passwordCon"></span></label>
+                                <!-- <div class="alerts-error__pass-confirmation">Пароли не совпадают</div> -->
+                                <input class="section-input-field__password-input _red _passwordСonfirmation"
+                                    type="text" placeholder="Подтвердите пароль" id="password-confirmation-input">
+                            </div>
+                            <div class="section-input-field__item item-gender">
+                                <div class="section-input-field__gender-title">Пол</div>
+                                <div class="section-input-field-gender__item">
+                                    <input class="section-input-field-gender__input" type="radio" id="gender-input-man"
+                                        name="gender" value="Мужчина">
+                                    <label class="section-input-field-gender__label _secondary"
+                                        for="gender-input">Мужчина</label>
+                                </div>
+                                <div class="section-input-field-gender__item">
+                                    <input class="section-input-field-gender__input" type="radio"
+                                        id="gender-input-woman" name="gender" value="Женщина">
+                                    <label class="section-input-field-gender__label _secondary"
+                                        for="gender-input">Женщина</label>
+                                </div>
+                            </div>
+                            <div class="section-input-field__item about-me">
+                                <div class="section-input-field__about-me-title">О себе</div>
+                                <textarea class="section-input-field__about-me-input _secondary"
+                                    placeholder="Расскажите о себе..." id="about-me"></textarea>
+                            </div>
+                            <div class="section-input-field__item item-checkbox">
+                                <input class="section-input-field__checkbox-input " type="checkbox" id="approval-input">
+                                <label class="section-input-field__approval-label _secondary" for="approval-input">Я
+                                    согласен
+                                    получать
+                                    обновления на почту
+                                </label>
+                            </div>
+                            <button class="section-input-field__button">Регистрация</button>
+                        </form>
+                    </section>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__conteiner _conteiner">
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
